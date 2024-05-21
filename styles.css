@@ -1,0 +1,45 @@
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 18px;
+}
+.back::after {
+  height: 980px;
+  content: "";
+  background: url(/Foot.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.4;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  position: absolute;
+  z-index:-1;
+}
+img{
+  height: 155px;
+  width: 155px;
+  float: right; 
+}
+span{
+  font-weight: bold;
+  color:darkblue;
+}
+.divInfoImg{
+  margin-left: 250px;
+  float: left;
+  width: 350px;
+  height: 650px;  
+}
+.divInfo{
+  margin-left: 20px;  
+}
+.divSelect{
+  margin-bottom: 40px;
+}
+.divPlayersAch{
+  margin:  10px 220px 10px 680px;  
+}
+h2{
+  color: darkblue;
+}

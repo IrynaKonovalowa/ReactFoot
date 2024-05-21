@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href ="styles.css" rel="stylesheet">
+    <title>Foot</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel" src="ClubsList.jsx">        
+    </script>
+    <script type="text/babel" src="SearchPlugin.jsx">
+    </script>
+    <script type="text/babel" src="Info.jsx">
+    </script>
+    <script type="text/babel" src="Achievements.jsx">
+    </script>    
+    <script type="text/babel" src="Players.jsx">
+    </script>
+    <script type="text/babel" src="Result.jsx">
+    </script>
+    
+    <script type="text/babel">
+        const propsValues = {        
+        title: "Football Club:",
+        clubDefault: {name: "Paris Sait-German", trainer: "Luis Enrique", city: "Paris", year : "1970", logo: "/Paris_Saint-Germain_Logo.png", players :["Keylor Navas", "Danilo Pereira", "Alexandre Letellier", "Layvin Kurzawa", "Marquinhos", "Milan Skriniar", "Sergio Rico", "Lucas Hernandez", "Presnel Kimpembe", "Marco Asensio", "Kylian Mbappe", "Ethan Mbappe Lottin", "Goncalo Ramos", "Nuno Mendes"], achievements: [ {achievement:"Ligue des champions (C1)", result:["Finaliste : 2020"]}, {achievement: "Coupe des vainqueurs de coupe (C2) (1)", result:["Vainqueur : 1996", "Finaliste : 1997"]}, {achievement:"Coupe UEFA (C3)", result:["Meilleure performance : Demi-finaliste en 1993"]}, {achievement:"1993 Supercoupe de l'UEFA", result:["Finaliste : 1996"]}, {achievement:"Coupe Intertoto (1)", result:["Vainqueur : 2001"]}]},        
+        clubs: [{name: "Paris Sait-German", trainer: "Luis Enrique", city: "Paris", year : "1970", logo: "/Paris_Saint-Germain_Logo.png", players :["Keylor Navas", "Danilo Pereira", "Alexandre Letellier", "Layvin Kurzawa", "Marquinhos", "Milan Skriniar", "Sergio Rico", "Lucas Hernandez", "Presnel Kimpembe", "Marco Asensio", "Kylian Mbappe", "Ethan Mbappe Lottin"], achievements: [ {achievement:"Ligue des champions (C1)", result:["Finaliste : 2020"]}, {achievement: "Coupe des vainqueurs de coupe (C2) (1)", result:["Vainqueur : 1996", "Finaliste : 1997"]}, {achievement:"Coupe UEFA (C3)", result:["Meilleure performance : Demi-finaliste en 1993"]}, {achievement:"1993 Supercoupe de l'UEFA", result:["Finaliste : 1996"]}, {achievement:"Coupe Intertoto (1)", result:["Vainqueur : 2001"]}]},
+        {name: "Olimpic de Marseille", trainer: "Jean-Louis Gasset", city: "Marseille", year : "1897", logo: "/Olympique_de_Marseille.png", players :["Pierre-Emerick Aubameyang", "Geoffrey Kondogbia", "Jonathan Clauss", "Jordan Veretout", "Ruben Blanco", "Chancel Mbemba", "Joaquin Correa", "Samuel Gigot", "Pau Lopez", "Valentin Rongier", "Michael Murillo", "Amine Harit", "Azzedine Ounahi"], achievements: [ {achievement:"Ligue des champions (1)", result:["Vainqueur en 1993", "Finaliste en 1991"]}, {achievement: "Coupe UEFA / Ligue Europa", result:["Finaliste en 1999, 2004 et 2018"]}, {achievement:"Coupe Intertoto (1)", result:["Vainqueur en 2005"]}, ]},
+        {name: "FC Lyon", city: "Lyon", trainer: "Laurent La Pietra ", year : "1893", logo: "/FC_Lyon.png", players :["Remy Riou", "Dejan Lovren", "Anthony Lopes", "Alexandre Lacazette", "Clinton Mata", "Nicolas Tagliafico", "Duje Caleta-Car", "Henrique", "Corentin Tolisso", "Ainsley Maitland-Niles", "Mama Balde", "Orel Mangala", "Paul Akouokou"], achievements: [ {achievement:"Championnat de France (4)", result:["Champion : 1991, 1993, 1995 et 1998", "Vice-champion : 1985, 1994, 2003 et 2004"]},{achievement:"Challenge de France (2)", result:["Vainqueur : 2003 et 2004", "Finaliste : 2002"]}]}]
+        };
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+        .render(
+            <React.StrictMode>
+                <ClubsList data={propsValues} />
+            </React.StrictMode>           
+        );
+    </script>
+</body>
+</html>
